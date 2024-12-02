@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #a72771;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #da66b5;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.image-overlay {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: -50px;
+  z-index: 1;
+}
+
+.intro-text {
+  margin-top: 20px;
+  color: #f0cced;
+}
+
+.scroll-button {
+  background-color: #a72771;
+  border: none;
+  color: #f0cced;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+/* About Section */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0px;
+  background-color: #da66b5;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color:  #f0cced;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Education & Experience Section */
+#education-experience {
+  padding: 50px 0;
+  background-color: #da66b5;
+}
+
+#education-experience h2 {
+  text-align: center;
+  color: #f0cced;
+  margin-bottom: 30px;
+}
+
+.education, .experience {
+  margin-bottom: 30px;
+}
+
+.education h3, .experience h3 {
+  color: #f0cced;
+  margin-bottom: 20px;
+  text-align: left;
+  border-bottom: 2px solid #f0cced;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.education-item, .experience-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(231, 165, 213, 0.1);
+}
+
+.education-item h4, .experience-item h4 {
+  color: #a72771;
+  margin-bottom: 5px;
+}
+
+.education-item p, .experience-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.education-item em, .experience-item em {
+  font-style: italic;
+  color: #333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-item, .experience-item {
+      padding: 10px;
+  }
+
+  #education-experience h2 {
+      font-size: 1.8rem;
+  }
+
+  .education h3, .experience h3 {
+      font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  #education-experience {
+      padding: 30px 0;
+  }
+
+  .education-item h4, .experience-item h4 {
+      font-size: 1.2rem;
+  }
+
+  .education-item p, .experience-item p {
+      font-size: 0.9rem;
+  }
+}
+
+.skills {
+  margin-bottom: 40px;
+  background-color: #da66b5;
+  height: 250px;
+}
+
+.section-title {
+  color: #f0cced;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex; /* Flexbox untuk menampilkan kartu skill secara horizontal */
+  justify-content: space-around; /* Menyebarkan kartu secara merata */
+  gap: 20px; /* Jarak antar kartu */
+  flex-wrap: wrap; /* Membuat kartu menyesuaikan ketika ukuran layar kecil */
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px; /* Kartu skill memiliki lebar maksimal */
+  text-align: center;
+}
+
+.skill-card h3 {
+  margin: 0;
+  color: #a72771;
+}
+
+.skill-card p {
+  color: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .skills-list {
+    flex-direction: column; /* Pada layar kecil, kartu skill akan disusun vertikal */
+    align-items: center;
+  }
+}
+.certificates {
+  margin-top: -40px;
+  background-color: #da66b5;
+  height: 500px;
+}
+
+.section-title {
+  color: #f0cced;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.certificates-list {
+  display: flex; /* Flexbox untuk menyusun sertifikat secara horizontal */
+  justify-content: space-around; /* Menyebarkan kartu secara merata */
+  gap: 20px; /* Jarak antar kartu sertifikat */
+  flex-wrap: wrap; /* Membuat kartu sertifikat menyesuaikan layar yang lebih kecil */
+}
+
+.certificate-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px; /* Kartu sertifikat memiliki lebar maksimal */
+  text-align: center;
+}
+
+.certificate-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.certificate-card h3 {
+  margin: 10px 0;
+  color: #a72771;
+}
+
+.certificate-card p {
+  color: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .certificates-list {
+    flex-direction: column; /* Pada layar kecil, sertifikat akan disusun secara vertikal */
+    align-items: center;
+  }
+}
+/* Footer */
+.footer {
+  background-color: #a72771;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 200px;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #f0cced;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Copyright */
+footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
